@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Tracker</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Speed Tracker</h1>
+        <label for="test-duration">Select Duration:</label>
+        <select id="test-duration">
+            <option value="1">1 minute</option>
+            <option value="3">3 minutes</option>
+            <option value="5">5 minutes</option>
+        </select>
+        <button id="start-button">Start Test</button>
+        <div id="timer">Time: 0:00</div>
+        <textarea id="typing-area" placeholder="Start typing here..."></textarea>
+        <div id="results">
+            <p>Words Per Minute (WPM): <span id="wpm">0</span></p>
+            <p>Accuracy: <span id="accuracy">0</span>%</p>
+        </div>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
